@@ -12,6 +12,15 @@ Provide an accelerated view of expected reserves ahead of month-end close by com
 - Align data to a common structure by underwriting period, accident period, loss type and reinsurance type
 - Convert all values from local currency into USD
 
+### Application of Reserving Methods
+
+- Apply agreed actuarial reserving methods. Default methods are defined through an input file, but the user should be able to override these values for the given reporting period at run time. The methods are:
+  - ELR (Expected Loss Ratio): Applied to premium-based segments where claims experience is immature.
+  - IBF (Incurred Bornhuetter-Ferguson): Combines expected loss ratios with emerging incurred experience.
+  - ICL (Incurred Chain Ladder) Used where incurred development patterns are stable and credible.
+  - Incurred: Direct use of reported and incurred claims data for highly mature periods.
+  - IBNR Ratio: Applied as a simplified approach for early estimates on specific segments.
+
 ## Business Value
 
 - Provides earlier visibility into reserve movements and emerging risks
